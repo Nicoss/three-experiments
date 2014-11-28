@@ -227,7 +227,7 @@ var Cube = (function(){
         else {
             var sound = document.getElementById(idSound);
             sound.play();
-            setTimeout(function(){sound.pause()},100);
+            setTimeout(function(){sound.pause(); sound.currentTime = 0;},100);
         }
     }
 
